@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>SixKeys</title>
+		<link
+			rel="stylesheet"
+			href="./style.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<a href="" class="logo"
+				>SixKeys<span>.</span></a
+			>
+			<ul class="navigation">
+				<li><a href="#banner">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#expert">Expert</a></li>
+				<li>
+					<a href="#testimonials"
+						>Testimonials</a
+					>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</header>
+		<section class="banner" id="banner">
+			<div class="content">
+				<h2>Always Choose Good</h2>
+				<p>
+					Lorem Ipsum is simply dummy text of
+					the printing and typesetting
+					industry. Lorem Ipsum has been the
+					industry's standard dummy text ever
+					since the 1500s, when an unknown
+					printer took a galley of type and
+					scrambled it to make a type
+					specimen book.
+				</p>
+				<a href="#" class="btn">Our Menu</a>
+			</div>
+		</section>
+		<script>
+			window.addEventListener(
+				"scroll",
+				function () {
+					const header = document.querySelector(
+						"header"
+					);
+					header.classList.toggle(
+						"sticky",
+						window.scrollY > 0
+					);
+				}
+			);
+		</script>
+	</body>
+</html>
